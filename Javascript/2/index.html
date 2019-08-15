@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="card">
+      <div class="top-selection">
+        <img id="image-container" src="1.jpg" alt="">
+        <div class="nav">
+          <img onclick="change_img(this)" src="1.jpg" alt="">
+          <img onclick="change_img(this)" src="2.jpeg" alt="">
+          <img onclick="change_img(this)" src="3.jpg" alt="">
+        </div>
+        <div class="price">$80</div>
+      </div>
+
+      <div class="product-info">
+        <div class="name">Lunettes Soleil Rappeur</div>
+        <div class="dis">Awesome Men Lunettes Soleil Rappeur</div>
+        <a class="btn" href="#">Add to cart</a>
+      </div>
+
+    </div>
+    <script type="text/javascript">
+      var container = document.getElementsById('image-container');
+      function change_img(image) {
+        container.src = image.src;
+      }
+    </script>
+  </body>
+</html>
